@@ -1,8 +1,8 @@
 # Extracting linguistic features using spaCy
-This repository holds the code for assignment 1 for language analytics (S2023). Linguistic features are extracted from each subcopora of the USEcorpus. 
+This repository holds the code for assignment 1 for language analytics (S2023). Linguistic features are extracted from each subcopora of the USEcorpus. In addition to csv files, a plot is created for each subcorpus showing the relative frequency of nouns, verbs, adjectives and adverbs.
 
 ## Description of the data
-The 
+The data used 
 
 ## Usage and reproducibility
 To extract the linguistic features of the USE corpora run the following commands from the root of the directory.
@@ -27,6 +27,7 @@ The linguistic features of the USE corpus will be extracted and the results will
 │   ├── a1.csv
 │   └── ...
 ├── src
+│   ├── plot_entities.py
 │   └── extract_ling_features.py            
 ├── assignment_description.md
 ├── requirements.txt       
@@ -44,3 +45,7 @@ filename|relfreq_NOUN|relfreq_VERB|relfreq_ADJ|relfreq_ADV|unique_PERSON|unique_
 |file1.txt|---|---|---|---|---|---|---|
 |file2.txt|---|---|---|---|---|---|---|
 |etc|---|---|---|---|---|---|---|
+
+
+In the plot below the relative frequency of nouns, verbs, adjectives and adverbs are plotted for each subcorpus.
+![rel freq plot](out/entities.png)
