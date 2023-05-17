@@ -12,7 +12,7 @@ To extract the linguistic features of the USE corpora run the following commands
 ```
 bash setup.sh
 ```
-3. Run the analysis
+3. Run the analysis and plot the relative frequency of nouns, verbs, adjectives and adverbs in each subcorpus
 ```
 bash run.sh
 ```
