@@ -165,11 +165,14 @@ def main():
             with open(os.path.join(args.input_dir, folder, file), "r", encoding='latin-1') as f:
                 text = f.read()
             
-            text = clean_text(text) # clean the text
+            # clean the text
+            text = clean_text(text) 
             
-            df_tmp = extract_ling_features(nlp, text, file) # extract the lingustic features
+            # extract the lingustic features
+            df_tmp = extract_ling_features(nlp, text, file) 
             
-            df = pd.concat([df, df_tmp], ignore_index=True) # append the features from the file to the dataframe
+            # append the features from the file to the dataframe
+            df = pd.concat([df, df_tmp], ignore_index=True) 
 
         # save the dataframe as a csv file in the output directory    
         df.to_csv(os.path.join(args.output_dir, folder + ".csv"), index=False)
