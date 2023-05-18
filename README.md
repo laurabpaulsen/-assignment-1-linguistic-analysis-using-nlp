@@ -17,6 +17,8 @@ bash setup.sh
 bash run.sh
 ```
 
+The pipeline was developed and tested on [uCloud](https://cloud.sdu.dk/app/dashboard)(Ubuntu v22.10m, Coder python v1.77.3, python v3.10.7).
+
 The linguistic features of each of the subcorpora in the USEcorpus will be extracted and the results will be saved in the `out` directory.
 
 ## Repository structure
